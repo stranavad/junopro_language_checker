@@ -1,0 +1,200 @@
+export default {
+  export: {
+    field: {
+      severalMinutes: 'Tato akce může trvat několik minut',
+      exportedResults: 'Exportované výsledky budou <span class="t-body__bold">zaslány na váš e-mail</span>',
+      checkEmail: 'Pokud v e-mailové schránce nic nevidíte, zkontrolujte také složku spam.',
+    },
+  },
+  testCase: {
+    action: {
+      addExpectedResult: 'Přidat očekávaný výsledek',
+      addStatus: 'Přidat stav',
+      addTestData: 'Přidat testovací data',
+      addTesters: 'Přidat testéry',
+      addOwner: 'Přidat vlastníka',
+      addToPlan: 'Přidat případy do plánů',
+      assignTesters: 'Přiřadit testéry',
+      copy: 'Kopírovat testovací případy do jiného projektu',
+      copyAllFiltered: 'Kopírovat všechny filtrováné',
+      copySelected: 'Kopírovat vybrané',
+      deleteConfirm: 'Opravdu chcete smazat tento testovací případ?',
+      reportToJira: 'Ohlásit do Jira',
+      reportBug: 'Nahlásit chybu',
+      searchOrFilter: 'Vyhledat nebo filtrovat případy...',
+      selectOrAdd: 'Vybrat nebo přidat testovací případ',
+      switchView: 'Přepnout zobrazení testovacího případu',
+    },
+    entity: {
+      author: 'Autor',
+      testCase: 'Testovací případ',
+      testCases: 'Testovací případy',
+      testData: 'Testovací data',
+    },
+    field: {
+      count: 'počet testovacích případů',
+      expectedResult: 'Očekávaný výsledek',
+      notExecutedYet: 'Ještě neproveden',
+      testParameters: 'Testovací parametry',
+      relatedIssues: 'Související problémy',
+      testStatusTableView: 'Stav testu {status}%',
+      trackingParameters: 'Sledovací parametry',
+      reportedIn: 'Ohlášeno v',
+      reportedInJira: 'Ohlášeno v Jira',
+    },
+    notification: {
+      bulkClone: 'Testovací případy byly úspěšně zkopírovány do projektu {name}',
+      bulkCloneFiltered:
+        'Všechny filtrovací testovací případy byly úspěšně zkopírovány do projektu {name}',
+      changeAuthor: '{userName} byl nastaven jako autor testu - {name}!',
+      changeOwner: '{userName} byl nastaven jako vlastník testu - {name}!',
+      multipleAdd: 'Testovací případy byly úspěšně přidány do testovacích plánů!',
+      updateTesters: '{name} testéři byli úspěšně aktualizováni!',
+    },
+    state: {
+      reporting: 'Ohlašování...',
+    },
+  },
+  testExecution: {
+    action: {
+      executeTestPlan: 'Spustit testovací plán',
+      stopExecution: 'Zastavit provádění',
+      resume: 'Pokračovat',
+      resumeLastExecution: 'Pokračovat v posledním provedení',
+      startExecution: 'Spustit provádění',
+    },
+    entity: {},
+    field: {
+      est: 'Oč. Čas provádění',
+      executedBy: 'Provedené',
+      testResult: 'Výsledek testu',
+      testStatusTableView: 'STAV TESTU {status}%',
+      status: 'Stav provádění',
+    },
+    notification: {
+      updateResult: 'Výsledek byl úspěšně aktualizován',
+      start: 'Provedení {name} začalo v {datetime}',
+      stop: 'Provedení {name} zastaveno v {datetime}',
+      cancel: 'Provedení {name} zrušeno v {datetime}',
+      changeStatusAll:
+        'Provedení {name} bylo změněno na {statusName}',
+      changePlan: 'Plán {name} byl změněn na {testPlanName}',
+    },
+    other: {
+      forExecution: 'Testovací plán vybrán k provedení',
+    },
+    state: {
+      executed: 'Provedené',
+      executedInTestPlan: 'Provedené v testovacím plánu',
+      loadingResult: 'Načítání výsledku testu...',
+      notExecuted: 'Ještě neproveden',
+    },
+  },
+  testPlan: {
+    action: {
+      addFeaturesNotToBeTested: 'Přidat funkce, které se nebudou testovat',
+      addFeaturesToBeTested: 'Přidat funkce, které se budou testovat',
+      choose: 'Vybrat testovací plán',
+      chooseAndExecute: 'Vybrat testovací plán a spustit',
+      deleteConfirm: 'Opravdu chcete smazat tento testovací plán?',
+      removeFromPlan: 'Odstranit z plánu',
+      searchOrFilter: 'Vyhledat nebo filtrovat plány...',
+    },
+    entity: {
+      plan: 'Plán',
+      testPlans: 'Testovací plány',
+      testPlan: 'Testovací plán',
+    },
+    field: {
+      currentStatus: 'Současný stav',
+      difference: 'Rozdíl',
+      featuresNotToBeTested: 'Funkce, které se NEBUDOU testovat',
+      featuresToBeTested: 'Funkce, které se BUDOU testovat',
+      plannedStatus: 'Plánovaný stav',
+      progress: 'Postup',
+      statistics: 'Statistiky',
+      tcCountDifference: 'Rozdíl v počtu TC',
+      timeline: 'Časová osa',
+    },
+    notification: {},
+    state: {
+      blocked: 'Blokováno',
+      failed: 'Selhalo',
+      notAvailable: 'N/A',
+      notCompleted: 'Nedokončené',
+      noRun: 'Nespuštěné',
+      notRun: 'Neprovedené',
+      passed: 'Prošlo',
+    },
+  },
+  testRun: {
+    action: {},
+    entity: {
+      jiraIssue: 'Jira problém',
+    },
+    field: {},
+    other: {
+      by: 'Od {name}',
+    },
+    state: {
+      noRunsFound: 'Nebyly nalezeny žádné spuštění',
+    },
+  },
+  testSpace: {
+    action: {
+      add: 'Přidat testovací prostory',
+      create: 'Vytvořit nový prostor',
+      searchOrFilter: 'Vyhledat nebo filtrovat prostory...',
+    },
+    entity: {
+      testSpaces: 'Testovací prostory',
+    },
+    field: {
+      testSpaceSettings: 'Nastavení testovacího prostoru',
+    },
+    notification: {
+      store: 'Testovací prostor byl úspěšně vytvořen',
+      update: 'Testovací prostor byl úspěšně aktualizován',
+      delete: 'Testovací prostor byl úspěšně smazán',
+      restore: 'Testovací prostor byl úspěšně obnoven',
+      updateTestSpaces: '{name} testovací prostory byly úspěšně aktualizovány!',
+    },
+    state: {
+      storing: 'Ukládání...',
+      storingSpace: 'Ukládání prostoru...',
+    },
+  },
+  testStep: {
+    action: {
+      addExpectation: 'Přidat očekávání',
+      addPrecondition: 'Přidat předpoklad',
+      addResult: 'Přidat výsledek',
+      addStep: 'Přidat krok testu',
+      searchOrFilter: 'Vyhledat nebo filtrovat kroky...',
+    },
+    entity: {},
+    field: {
+      expectation: 'Očekávání',
+      headers: {
+        comments: 'Komentáře',
+        runs: 'Spuštění',
+        steps: 'Kroky',
+      },
+      lastExecStatus: 'Poslední stav provedení',
+      precondition: 'Předpoklad',
+      result: 'Výsledek',
+    },
+    notification: {
+      delete: 'Krok byl úspěšně smazán!',
+      positionUpdated: 'Pozice kroku byla úspěšně aktualizována.',
+      restore: 'Krok byl úspěšně obnoven!',
+      store: 'Krok {stepNumber} byl úspěšně vytvořen!',
+      updated: 'Krok byl úspěšně aktualizován!',
+    },
+    state: {
+      loading: 'Načítání kroků...',
+      noStepsDefined: 'Nebyly definovány žádné kroky',
+      noStepsFound: 'Nebyly nalezeny žádné kroky testu.',
+    },
+  },
+};

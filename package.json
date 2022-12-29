@@ -1,0 +1,25 @@
+{
+  "name": "language_checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node index.js",
+    "copy": "node folder_mover.js"
+  },
+  "paths": {
+    "@/lang/cs": [
+      "lang/cs/index.js"
+    ],
+    "@/lang/en": [
+      "lang/en/index.js"
+    ]
+  },
+  "author": "David Stranava",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "rimraf": "^3.0.2"
+  }
+}
